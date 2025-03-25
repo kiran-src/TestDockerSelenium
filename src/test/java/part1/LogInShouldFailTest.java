@@ -26,7 +26,7 @@ public class LogInShouldFailTest {
     ChromeOptions options = new ChromeOptions();
     options.setCapability("browserName", "chrome");
     options.setCapability("platformName", "LINUX");
-    driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+    driver = new RemoteWebDriver(new URL("http://sel-chrome:4444/wd/hub"), options);
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
   }
 
