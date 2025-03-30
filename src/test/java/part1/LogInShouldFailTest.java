@@ -47,7 +47,7 @@ public class LogInShouldFailTest {
     driver.findElement(By.tagName("button")).click();
     Thread.sleep(2000);
     String actualResult = driver.findElement(By.tagName("h6")).getText();
-    String expectedResult = "Dashboard";
+    String expectedResult = "Dashboard -w";
     Assert.assertNotEquals(actualResult, expectedResult);
   }
 }

@@ -51,7 +51,7 @@ public class FirstSeleniumTest {
     driver.findElement(By.tagName("button")).click();
     Thread.sleep(2000);
     String actualResult = driver.findElement(By.tagName("h6")).getText();
-    String expectedResult = "Dashboard d";
+    String expectedResult = "Dashboard";
     Assert.assertEquals(actualResult, expectedResult);
   }
 }
